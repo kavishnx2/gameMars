@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://use.typekit.net/yjs2beu.css");
+
+@font-face {
+  font-family: "ClashGrotesk";
+  font-style: normal;
+  font-weight: 200;
+  src:
+    local("ClashGrotesk"),
+    url("/fonts/clash-grotesk/ClashGrotesk-Extralight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ClashGrotesk";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("ClashGrotesk"),
+    url("/fonts/clash-grotesk/ClashGrotesk-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ClashGrotesk";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("ClashGrotesk"),
+    url("/fonts/clash-grotesk/ClashGrotesk-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ClashGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("ClashGrotesk"),
+    url("/fonts/clash-grotesk/ClashGrotesk-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ClashGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("ClashGrotesk"),
+    url("/fonts/clash-grotesk/ClashGrotesk-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ClashGrotesk";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("ClashGrotesk"),
+    url("/fonts/clash-grotesk/ClashGrotesk-Bold.ttf") format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+html {
+  /* height: 100%; */
+  /* overflow-x: hidden; */
+}
+body {
+  /* overflow-x: hidden; */
+  /* height: 100%; */
+  background: linear-gradient(90deg, #3fbeff 0%, #c49bf6 75%);
+  background-size: cover;
+
+  /* color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb)); */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.route-transition {
+  transition: opacity 5s ease-in;
+}
+
+.route-enter {
+  opacity: 0;
+}
+
+.route-enter-active {
+  opacity: 1;
+}
+
+.route-exit {
+  opacity: 1;
+}
+
+.route-exit-active {
+  opacity: 0;
+}
+
+.xy-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.x-center {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.y-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.translate-z-100 {
+  transform: translateZ(100px);
+}
+
+.translate-z-200 {
+  transform: translateZ(200px);
+}
+
+.translate-z-300 {
+  transform: translateZ(300px);
+}
+
+.translate-z-400 {
+  transform: translateZ(400px);
+}
+
+@media screen and (max-width: 1400px), (max-height: 800px) {
+  .translate-z-200 {
+    transform: translateZ(100px);
+  }
+
+  .translate-z-300 {
+    transform: translateZ(200px);
+  }
+
+  .translate-z-400 {
+    transform: translateZ(300px);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .translate-z-100,
+  .translate-z-200,
+  .translate-z-300,
+  .translate-z-400 {
+    transform: none;
+  }
+}
+
+.anim-pulseOpacity {
+  animation: pulseOpacity 3s infinite;
+}
+
+@keyframes signRotation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1920px);
+  }
+}
+
+@keyframes pulseOpacity {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,17 @@
+.islandMap {
+  &__track {
+    --x: 0;
+    transform: translateX(var(--x));
+  }
+
+  //
+  &__clouds {
+    background: url("/images/map/clouds.webp") left center repeat-x;
+  }
+
+  &__water {
+    --x: 0;
+    transform: translateX(var(--x));
+    transition: transform 1s ease;
+  }
+}

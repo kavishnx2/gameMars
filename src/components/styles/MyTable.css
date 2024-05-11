@@ -1,0 +1,101 @@
+/* MyTable.css */
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust opacity as needed */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Adjust shadow color and intensity */
+    backdrop-filter: blur(10px); /* Adjust blur intensity */
+  }
+  
+  .table__header {
+    text-align: center;
+  }
+  
+  .table__header h1 {
+    color: #fff; /* Header text color */
+    font-size: 35px;
+    font-weight:500;
+  }
+  
+  .input-group {
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .input-group input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust input background opacity */
+  }
+  
+  .input-group img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .table__body table {
+    width: 100%;
+  }
+  
+  .table__body th,
+  .table__body td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #fff; /* Header text color */
+  }
+  
+  .table__body th {
+    background-color: rgba(255, 255, 255, 0.15); /* Adjust header background opacity */
+    color: #fff; /* Header text color */
+  }
+  
+  .table__body td {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust cell background opacity */
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .status.delivered {
+    background-color: rgba(46, 204, 113, 0.8); /* Adjust delivered status color and opacity */
+  }
+  
+  .status.cancelled {
+    background-color: rgba(231, 76, 60, 0.8); /* Adjust cancelled status color and opacity */
+  }
+  
+  .status.shipped {
+    background-color: rgba(52, 152, 219, 0.8); /* Adjust shipped status color and opacity */
+  }
+
+  .table__body .OddsPadding{
+    padding: 0.5rem;
+    /* background-color: red; */
+    opacity: 0.6;
+    border-radius: 1rem;
+    background-color: #1cc91c57;
+    max-width: 80px;
+    margin: auto;
+  }
+  .table__body .playerFlag img{
+    height: 2.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .table__body .playerFlag{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
